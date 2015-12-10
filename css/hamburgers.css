@@ -1,87 +1,37 @@
-.c-hamburger {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	width: 96px;
-	height: 96px;
-	font-size: 0;
-	text-indent: -9999px;
-	apperance: none;
-	box-shadow: none;
-	border-radius: none;
-	cursor: pointer;
-	transition: background 0.3s;
-}
-.c-hamburger:focus {
-	outline: none;
-}
-.c-hamburger span {
-	display: block;
-	position: absolute;
-	top: 44px;
-	left: 18px;
-	right: 18px;
-	height: 8px;
-	background: white; 
-}
+/* -----------------------------------------------------------------------------
+ HAMBURGER ICONS COMPONENT 
+----------------------------------------------------------------------------- */
+/** Toggle Switch Globals  All switches should take on the class `c-hamburger` as well as their variant that will give them unique properties. This class is an overview class that acts as a reset for all versions of the icon. */
+.c-hamburger { display: block; position: relative; overflow: hidden; margin: 0; padding: 0; width: 70px; height: 70px; font-size: 0; text-indent: -9999px; -webkit-appearance: none; -moz-appearance: none; appearance: none; box-shadow: none; border-radius: none; border: none; cursor: pointer; transition: background 0.3s; }
 
-.c-hamburger span::before,
-.c-hamburger span::after {
-	position: absolute;
-	display: block;
-	left: 0;
-	width: 100%;
-	height: 8px;
-	background-color: #fff;
-	content: "";
-}
-.c-hamburger span::before {
-	top: -20px;
-}
-.c-hamburger span::after {
-	bottom: -20px;
-}
+.c-hamburger:focus { outline: none; }
 
-.c-hamburger--htla {
-  background-color: #32dc64;
-}
+.c-hamburger span { display: block; position: absolute; top: 31px; left: 14px; right: 14px; height: 8px; background: black; }
 
-.c-hamburger--htla span {
-  transition: transform 0.3s;
-}
+.c-hamburger span::before, .c-hamburger span::after { position: absolute; display: block; left: 0; width: 100%; height: 8px; background-color: #000000; content: ""; }
 
-.c-hamburger--htla span::before {
-  transform-origin: top right;
-  transition: transform 0.3s, width 0.3s, top 0.3s;
-}
+.c-hamburger span::before { top: -17px; }
 
-.c-hamburger--htla span::after {
-  transform-origin: bottom right;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s;
-}
+.c-hamburger span::after { bottom: -17px; }
+
+/** Style 3  Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing arrow. Usually indicates an off canvas menu sliding in from left that will be close on re-click of the icon. */
+.c-hamburger--htla { background-color: #fff; }
+
+.c-hamburger--htla span { transition: transform 0.3s; }
+
+.c-hamburger--htla span::before { transform-origin: top right; transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htla span::after { transform-origin: bottom right; transition: transform 0.3s, width 0.3s, bottom 0.3s; }
 
 /* active state, i.e. menu open */
-.c-hamburger--htla.is-active {
-  background-color: #18903c;
-}
+.c-hamburger--htla.is-active { background-color: #fff; }
 
-.c-hamburger--htla.is-active span {
-  transform: rotate(180deg);
-}
+.c-hamburger--htla.is-active span { transform: rotate(180deg); }
 
-.c-hamburger--htla.is-active span::before,
-.c-hamburger--htla.is-active span::after {
-  width: 50%;
-}
+.c-hamburger--htla.is-active span::before, .c-hamburger--htla.is-active span::after { width: 50%; }
 
-.c-hamburger--htla.is-active span::before {
-  top: 0;
-  transform: translateX(38px) translateY(4px) rotate(45deg);
-}
+.c-hamburger--htla.is-active span::before { top: 0; transform: translateX(29px) translateY(4px) rotate(45deg); }
 
-.c-hamburger--htla.is-active span::after {
-  bottom: 0;
-  transform: translateX(38px) translateY(-4px) rotate(-45deg);
-}
+.c-hamburger--htla.is-active span::after { bottom: 0; transform: translateX(29px) translateY(-4px) rotate(-45deg); }
+
+/*# sourceMappingURL=hamburgers.css.map */
