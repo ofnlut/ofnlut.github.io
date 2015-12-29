@@ -25,15 +25,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#load-about').click(function() {
-                $('#page-content-wrapper').load('about.html');
-                return false;
-            });
-        });
-    </script>
+
 </head>
 
 <body>
@@ -49,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" id="load-about" class="hvr-bounce-to-right">About</a>
+                    <a href="about.html" class="hvr-bounce-to-right">About</a>
                 </li>
                 <li>
                     <a href="#" class="hvr-bounce-to-right">Projects</a>
@@ -66,7 +58,6 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-
             <button class="c-hamburger c-hamburger--htla" id="menu-toggle">
                 <span>toggle menu</span>
             </button>
