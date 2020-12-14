@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hi!</title>
+    <title>Devin Mozee</title>
 
     <!--Hamburger stuff-->
     <link href="css/hamburgers.css" rel="stylesheet">
@@ -46,40 +46,48 @@
                     <a href="about.html" class="hvr-bounce-to-right">About</a>
                 </li>
                 <li>
-                    <a href="#" class="hvr-bounce-to-right">Projects</a>
-                </li>
-                <li>
                     <a href="#" class="hvr-bounce-to-right">Contact</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/open?id=1nMRpFNqeYecqiYZX71abgAheH-MP1WAjEATzQik8fLE" class="hvr-bounce-to-right">Resume</a>
                 </li>
                 <div id="sidebar-sm" class="sidebar-brand">
                   <a href="https://github.com/ofnlut" class="hvr-fade"><i class="fa fa-github fa-2x"></i></a>
-                  <a href="https://twitter.com/alnz0_" class="hvr-fade"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="https://www.instagram.com/oh.zohfilms/" class="hvr-fade"><i class="fa fa-instagram fa-2x"></i></a>
+                  <a href="www.linkedin.com/in/devin-mozee"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                 </div>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button class="c-hamburger c-hamburger--htla" id="menu-toggle">
-                <span>toggle menu</span>
-            </button>
-            <div class="container-fluid">
+        <div id="page-content-wrapper container">         
+            <header id="page-content-header">
+                <button class="c-hamburger c-hamburger--htla btn-anchor" id="menu-toggle">
+                    <span>toggle menu</span>
+                </button> 
                 <div class="row">
                     <div id="transition" class="center">
-                        <h1>Hey</h1>
-                        <p>Source of all my work and adventures in software,music,etc..</p>
-                        <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
+                        <h1 id="name-title">Devin Mozee</h1>
+                        <h3 id="occupation-subtitle">Software Engineer - Videographer</h3>
 
+                        <a href="https://github.com/ofnlut"><i class="fa fa-github fa-2x"></i></a>
+                        <a href="mailto:mozee@wisc.edu"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                        <a href="www.linkedin.com/in/devin-mozee"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
 
                     </div>
                 </div>
-            </div>
-        </div>
+            </header>
+         
+            <div class="content">
+                <h1>Videos</h1>
+                <div class="video-center">
+                    <h2 class="video-title"> Based Chase - Day One</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VOu35crboRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>        
+        </div>   
         <!-- /#page-content-wrapper -->
+    </div>
+        
 
     </div>
     <!-- /#wrapper -->
@@ -104,6 +112,16 @@
 
         })();
     </script>
+
+
+    <!-- Scroll -->
+    <script>
+        $(".project-skip").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".projects").offset().top},
+                'slow');
+        });
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -116,6 +134,11 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.projects');
     </script>
 
 </body>

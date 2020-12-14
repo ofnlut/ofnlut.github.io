@@ -15,7 +15,7 @@
 .c-hamburger span::after { bottom: -17px; }
 
 /** Style 3  Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing arrow. Usually indicates an off canvas menu sliding in from left that will be close on re-click of the icon. */
-.c-hamburger--htla { background-color: #fff; }
+.c-hamburger--htla { background-color: transparent; }
 
 .c-hamburger--htla span { transition: transform 0.3s; }
 
@@ -24,7 +24,7 @@
 .c-hamburger--htla span::after { transform-origin: bottom right; transition: transform 0.3s, width 0.3s, bottom 0.3s; }
 
 /* active state, i.e. menu open */
-.c-hamburger--htla.is-active { background-color: #fff; }
+.c-hamburger--htla.is-active { background-color: transparent; }
 
 .c-hamburger--htla.is-active span { transform: rotate(180deg); }
 

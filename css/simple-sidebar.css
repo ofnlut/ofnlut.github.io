@@ -13,10 +13,56 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+
 }
 
 #wrapper.toggled {
     padding-left: 250px;
+}
+
+#page-content-header{
+  overflow: hidden;
+  background: url('https://lh3.googleusercontent.com/0aqebKZFjLg1K9rJIOXycTI1zxGZ2QiDAqLOmmBNC4xMuyoFtnwLr3hmQwSrglEU7yrFb9E000x0xJqn0WB6CDxL86JPVsbtVKBxHP5Wy8l2bTY4NekVy4dCedFWM90qDSPoXHHPyw=w2542-h1900-no');
+  background-position: center 80vmax;
+/*  bottom: -115px;*/
+/*  left: 0px;
+  right: 10px;
+  width: 100%;*/
+}
+.btn-anchor{
+/*  position: relative;
+  left: -37%;*/
+}
+.video-center {
+  display: flex;
+  flex-direction: column;
+}
+.video-title{
+  padding-top:3em;
+  display:flex;
+  justify-content:center;
+}
+.content {
+  padding-top: 5em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects {
+  position: absolute;
+  top: 20em;
+  left: 35%;
+}
+.videos{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 30rem;
+
+}
+
+.cvPlay {
+  flex: 
 }
 
 #sidebar-wrapper {
@@ -32,6 +78,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -39,6 +86,8 @@
 }
 
 #page-content-wrapper {
+    
+    background-position: center 80vmax;
     width: 100%;
     position: absolute;
     padding: 15px;
